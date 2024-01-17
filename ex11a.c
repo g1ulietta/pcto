@@ -6,13 +6,16 @@ int main(){
         
     printf("inserisci un numero:\n");
     scanf("%d", &n);
-
-    while(n%x!=0){
-        x = x+1;
-    }
-    if(n==x){
+    if(n==1){
         printf("è un numero primo\n");
     }else{
-        printf("non è un numero primo\n");
+        while(n%x!=0){
+            x = x+1;
+        }
+        if(n==x){
+            printf("è un numero primo\n");
+        }else{
+            printf("non è un numero primo\n");
+        }
     }
 }
